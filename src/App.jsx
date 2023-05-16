@@ -1,11 +1,13 @@
 import React from "react";
 import Button from '@mui/material/Button';
+import NavigationComp from "./components/NavigationComp";
 
 export default function App() {
     return (
-        <div>
-            <h1 className="text-2xl">Hello World</h1>
-            <Button variant="contained">Hello World</Button>
+        <div className="h-screen">
+            <NavigationComp />
+            <div className="h-[92%]">
+            </div>
         </div>
     )
 }
