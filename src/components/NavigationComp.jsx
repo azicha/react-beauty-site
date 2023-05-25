@@ -3,23 +3,30 @@ import logo from "../assets/beauty-shopping-logo.svg";
 import Button from '@mui/material/Button';
 
 export default function NavigationComp() {
+    const [menuIsOpen, setMenuIsOpen] = React.useState(false);
+    function openMenu() {
+        setMenuIsOpen(prevState => !prevState);
+    }
+
     const coreNavigationItems = [
-        { name: "Home", comp: "" },
-        { name: "Facials", comp: "" },
-        { name: "Manicure", comp: "" },
-        { name: "Pedicure", comp: "" },
-        { name: "Hair", comp: "" },
+        { id: 1, name: "Home", comp: "/" },
+        { id: 2, name: "Facials", comp: "/facial" },
+        { id: 3, name: "Manicure", comp: "/manicure" },
+        { id: 4, name: "Pedicure", comp: "/pedicure" },
+        { id: 5, name: "Hair", comp: "/hair" },
     ];
 
     const otherNavigationItems = [
-        { name: "About Us", comp: "" },
-        { name: "Contact Us", comp: "" },
+        { id: 1, name: "About Us", comp: "/about-us" },
+        { id: 2, name: "Contact Us", comp: "/contact-us" },
     ];
 
     const coreNavigationButtons = coreNavigationItems.map((item) => {
         return (
-            <div className="h-fit w-fit mx-1">
-                <Button variant="text" color="primary" disableElevation>{ item.name }</Button>
+            <div className="h-fit w-fit mx-1" key={item.id}>
+                <a href={ item.comp }>
+                    <Button variant="text">{ item.name }</Button>
+                </a>
             </div>
             
         );
@@ -27,18 +34,29 @@ export default function NavigationComp() {
 
     const otherNavigationButtons = otherNavigationItems.map(function createOtherNavigationButtons(item) {
         return (
-            <Button variant="text">{ item.name }</Button>
-        )
+            <a href={ item.comp }
+                key={item.id}>
+                <Button variant="text">{ item.name }</Button>
+            </a>
+        );
     });
 
     return (
-        <div className="h-[8%] p-2 shadow-md flex items-center justify-between">
+        <div className="h-[8%] p-2 shadow-md flex items-center justify-between sticky top-0 backdrop-blur-lg bg-white z-30">
             <div className="flex items-center">
                 <h1 className="inline-flex mr-6">
                     <img src={ logo } alt="app-logo" className="w-8" />
                     Beauty Shopping
                 </h1>
-                { coreNavigationButtons }
+                { coreNavigationButtons } 
+                <div className="relative">
+                    <Button onClick={ () => { openMenu() } }>Sample Button</Button>
+                    { menuIsOpen && <div className="absolute w-full border-2 bg-white rounded-md shadow-lg">
+                        <h1 className="hover:cursor-pointer p-2 border-b-[1px]">Item 1</h1>
+                        <h1 className="hover:cursor-pointer p-2 border-b-[1px]">Item 2</h1>
+                        <h1 className="hover:cursor-pointer p-2">Item 3</h1>
+                    </div> }
+                </div>
             </div>
             <div>
                 { otherNavigationButtons }
