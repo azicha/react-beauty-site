@@ -3,16 +3,12 @@ import logo from "../assets/beauty-shopping-logo.svg";
 import Button from '@mui/material/Button';
 
 export default function NavigationComp() {
-    const [menuIsOpen, setMenuIsOpen] = React.useState(false);
-    function openMenu() {
-        setMenuIsOpen(prevState => !prevState);
-    }
-
+    
     const coreNavigationItems = [
         { id: 1, name: "Home", comp: "/" },
         { id: 2, name: "Facials", comp: "/facial" },
-        { id: 3, name: "Manicure", comp: "/manicure" },
-        { id: 4, name: "Pedicure", comp: "/pedicure" },
+        { id: 3, name: "Pedicure", comp: "/manicure" },
+        { id: 4, name: "Manicure", comp: "/pedicure" },
         { id: 5, name: "Hair", comp: "/hair" },
     ];
 
@@ -49,14 +45,6 @@ export default function NavigationComp() {
                     Beauty Shopping
                 </h1>
                 { coreNavigationButtons } 
-                <div className="relative">
-                    <Button onClick={ () => { openMenu() } }>Sample Button</Button>
-                    { menuIsOpen && <div className="absolute w-full border-2 bg-white rounded-md shadow-lg">
-                        <h1 className="hover:cursor-pointer p-2 border-b-[1px]">Item 1</h1>
-                        <h1 className="hover:cursor-pointer p-2 border-b-[1px]">Item 2</h1>
-                        <h1 className="hover:cursor-pointer p-2">Item 3</h1>
-                    </div> }
-                </div>
             </div>
             <div>
                 { otherNavigationButtons }
