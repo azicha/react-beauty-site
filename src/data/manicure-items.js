@@ -1,80 +1,67 @@
 export default [
     {
         id: 1,
-        itemName: "Sample Name A",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=2vgkkeaxn",
+        itemDescription: "Pedicure kit for Women Cream to Repair Rough Toes"
     },
     {
         id: 2,
-        itemName: "Sample Name B",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=c5svrs8kk",
+        itemDescription: "Professional Pedicure Tools Set, 26 in ! Stainless Steel Foot Rasp Dead Skin Remover"
     },
     {
         id: 3,
-        itemName: "Sample Name C",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=febct58z6",
+        itemDescription: "Professional Nail Table Rest Cushion for Toenails"
     },
     {
         id: 4,
-        itemName: "Sample Name D",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=g83vu5gp8",
+        itemDescription: "Callus Remover Liquid (6oz)-Calloused Feet Remover"
     },
     {
         id: 5,
-        itemName: "Sample Name E",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=p3fwydwj3",
+        itemDescription: "Intelligent Smart Sensor Nail Dryer Lamp for Foot for Gel Polish Curing"
     },
     {
         id: 6,
-        itemName: "Sample Name F",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=jumjshe9h",
+        itemDescription: "Handle Grip Nail Brush , Toenail Scrub Cleaning Brushes"
     },
     {
         id: 7,
-        itemName: "Sample Name G",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=b7fgur44k",
+        itemDescription: "Jomverl  Professional Pedicure Kit Nail Clippers Nail Care Tools"
     },
     {
         id: 8,
-        itemName: "Sample Name H",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=w8qzpre94",
+        itemDescription: "Codream Moistuirizing Heel Gel Socks to Repair Callus Rough Heel"
     },
     {
         id: 9,
-        itemName: "Sample Name I",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=2n9t7s7rr",
+        itemDescription: "ZenToes Gel Toe Separators for Pedicure - Set of 2 Toe Spacers (Clear)"
     },
     {
         id: 10,
-        itemName: "Sample Name J",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=4m8za369x",
+        itemDescription: "Wakaniya Poly Gel Nail Kit , 10 Poly Gel Colors, Slip Solution, Nail Forms"
     },
     {
         id: 11,
-        itemName: "Sample Name K",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=vuekn8mmd",
+        itemDescription: "Utopia Care Cuticle Pusher and Spoon Nail Cleaner 2Pack"
     },
     {
         id: 12,
-        itemName: "Sample Name L",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
+        itemImageLink: "https://files.fm/thumb_show.php?i=5v2qx57bq",
+        itemDescription: "Professional Electric Pedicure Set - to File, Buff, Grind, Smooth, Polish Natural, Thick, Nails"
     },
     {
         id: 13,
-        itemName: "Sample Name M",
-        itemImageLink: "https://files.fm/thumb_show.php?i=a3shwcrwr",
-        itemDescription: "lorem"
-    },
-];
+        itemImageLink: "https://files.fm/thumb_show.php?i=ykp7gbrpy",
+        itemDescription: "Saviland Poly Gel Nail Kit - 12 Colors Nail Gel Kit 15g Poly Gel Nail Set with Slip Solution"
+    }
+]
