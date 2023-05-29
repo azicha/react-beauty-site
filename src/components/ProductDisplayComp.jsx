@@ -12,6 +12,13 @@ export default function ProductDisplayComp(props) {
         setImageLoading(prevState => !prevState);
     }
 
+    const [isShown, setIsShown] = React.useState(false)
+    
+    function showButton() {
+        console.log("Appropriate button is shown");
+        setIsShown(prevShown => !prevShown);
+    }
+
     return (
         <div className="w-[95%] mb-4 h-[100%] rounded-md border-[1px] shadow-md p-2 relative">
             <h1 className="text-xl">{ props.itemName }</h1>
@@ -29,8 +36,9 @@ export default function ProductDisplayComp(props) {
                 <Button 
                     variant="contained"
                     endIcon={<ShoppingCartIcon />} 
-                    disableElevation>
-                    Add To Cart
+                    disableElevation
+                    onClick={ () => {showButton() } } >
+                    { isShown ? "Remove from Cart" : "Add To Cart" } 
                 </Button>
             </div>
         </div>
