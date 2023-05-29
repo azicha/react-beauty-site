@@ -2,6 +2,7 @@ import React from "react";
 // import ProductDisplayComp from "../components/ProductDisplayComp";
 // import manicureItems from "../data/manicure-items";
 
+
 export default function HomeViews() {
     // const maniCureItemsDisplay = manicureItems.map((item) => {
     //     return(
