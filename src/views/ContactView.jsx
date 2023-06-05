@@ -7,8 +7,6 @@ import Box from '@mui/material/Box';
 import PhoneIcon from '@mui/icons-material/Phone';
 import SubjectIcon from '@mui/icons-material/Subject';
 import MessageIcon from '@mui/icons-material/Message';
-import CircleIcon from '@mui/icons-material/Circle';
-
 
 export default function ContactView() {
     return (
