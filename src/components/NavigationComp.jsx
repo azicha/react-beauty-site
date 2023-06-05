@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/beauty-shopping-logo.svg";
 import Button from '@mui/material/Button';
 // import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 export default function NavigationComp() {
     
@@ -51,7 +52,7 @@ export default function NavigationComp() {
                 { otherNavigationButtons }
                 {/* { ShoppingBasketIcon } */}
             </div>
-            {/* <Button variant="text">{ ShoppingBasketIcon }</Button> */}
+            <Button variant="contained" endIcon={<ShoppingCartIcon />}></Button>
         </div>
     ); 
 }
