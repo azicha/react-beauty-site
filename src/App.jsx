@@ -16,7 +16,8 @@ export default function App() {
             <NavigationComp  />
             <Router>
                 <Routes>
-                    <Route path="/" element={ <HomeViews /> } />          
+                    <Route path="/" element={ <HomeViews /> } />  
+                            
                     <Route path="/manicure" element={ <ManicureViews /> } />          
                     <Route path="/facial" element={ <FacialsViews /> } />          
                     <Route path="/hair" element={ <HairViews /> } />          
