@@ -7,14 +7,14 @@ import HairViews from "./views/HairViews";
 import FacialsViews from "./views/FacialsViews";
 import AboutView from "./views/AboutView";
 import ContactView from "./views/ContactView";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 
 
 export default function App() {
     return (
         <div>
             <NavigationComp  />
-            <Router>
+            <BrowserRouter>
                 <Routes>
                     <Route path="/" element={ <HomeViews /> } />  
                             
@@ -25,7 +25,7 @@ export default function App() {
                     <Route path="/about-us" element={ <AboutView /> } />
                     <Route path="/contact-us" element={ <ContactView /> } />          
                 </Routes>
-            </Router>
+            </BrowserRouter>
         </div>
     )
 }
